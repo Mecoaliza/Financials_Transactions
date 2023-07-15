@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status da Transação</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: yellow;
+            border-radius: 10px;
+            padding: 10px;
+            color: black;
+        }
+
+        h1 {
+            font-size: 20px;
+            white-space: break-spaces;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: auto;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ status }}</h1>
+</body>
+</html>
+
+
+
