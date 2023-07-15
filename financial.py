@@ -29,7 +29,7 @@ def consulta_json(transaction_id):
 
                     # Condição para transação limite
 
-                    if transaction_amount < 500.0:
+                    if transaction_amount < 500.0: 
                         if user_id_count[user_id] > 2:
                              status = f"Status da Transação: {user_id}. Negada, você excedeu o limite de transações!"
                              return render_template('status.html', status=status)
