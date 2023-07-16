@@ -12,6 +12,7 @@ e uma página HTML básica foi criada para exibir o status das transações.
 
 É válido ressaltar que, embora esse projeto tenha utilizado métodos mais simples, existem abordagens mais avançadas, como o uso de técnicas de Machine Learning, que podem ser aplicadas para uma detecção de fraudes mais sofisticada.
 
+
 # 2. Endpoints:
 
 [financial.py](https://github.com/Mecoaliza/Financials_Transactions/blob/main/financial.py)
@@ -24,10 +25,16 @@ Ele consulta as informações da transação a partir do banco de dados e do arq
 Se o valor da transação for menor que 500.0 e o usuário tiver realizado mais de duas transações, a transação é negada.
 Caso contrário, a transação é aprovada.
 
+     ![image](https://github.com/Mecoaliza/Financials_Transactions/assets/113151407/5754deb6-0fd9-4bb3-a469-ddef4c6f4cef)
+
+
 
 - ### "/estorno/<int:transaction_id>":
 - Este endpoint recebe um ID de transação como parâmetro na URL. Ele consulta as informações da transação a partir do banco de dados SQLServer
 - Se a transação existir e tiver um campo has_cbk com valor "TRUE", não há a possibilidade de estorno. Caso contrário, o estorno é considerado possível e o usuário é solicitado a entrar em contato.
+
+  ![image](https://github.com/Mecoaliza/Financials_Transactions/assets/113151407/3fab38ec-01c3-4cfb-af15-58800bcb3af9)  
+
 
 # 3. Anti Fraude:
 
@@ -50,6 +57,15 @@ Essas regras são aplicadas no endpoint de consulta *"/consulta/<int:transaction
    Comportamentos incomuns, como muitos dispositivos diferentes sendo usados por um mesmo usuário, podem indicar atividades fraudulentas.
 - **Padrões de compra**: Observar o histórico de compras do usuário, incluindo itens, valores, categorias de produtos e horários.
   Identificar comportamentos incomuns, como compras excessivamente grandes ou incomuns para o padrão do cliente, pode indicar atividades fraudulentas.
+
+
+  # 4. Execução do programa:
+
+  ![image](https://github.com/Mecoaliza/Financials_Transactions/assets/113151407/a7f54f06-64d7-4b0a-a910-8eda9eb4129d)
+
+  ![image](https://github.com/Mecoaliza/Financials_Transactions/assets/113151407/43c58880-5d70-484b-9d4b-18f7f9dd841a)
+
+
 
 
 
