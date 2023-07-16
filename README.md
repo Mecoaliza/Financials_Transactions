@@ -2,7 +2,7 @@
 
 # 1. Introdução
 
-Este projeto Flask [financial.py](url) apresenta endpoints para consulta de informações de transações e estornos. 
+Este projeto Flask [financial.py](https://github.com/Mecoaliza/Financials_Transactions/blob/main/financial.py) apresenta endpoints para consulta de informações de transações e estornos. 
 Os dados são obtidos tanto de um banco de dados quanto de um arquivo JSON que contém os registros de transações. 
 Além disso, foi implementado um mecanismo de detecção de fraudes com regras específicas para aprovação ou negação das transações.
 
@@ -13,6 +13,8 @@ e uma página HTML básica foi criada para exibir o status das transações.
 É válido ressaltar que, embora esse projeto tenha utilizado métodos mais simples, existem abordagens mais avançadas, como o uso de técnicas de Machine Learning, que podem ser aplicadas para uma detecção de fraudes mais sofisticada.
 
 # 2. Endpoints:
+
+[financial.py](https://github.com/Mecoaliza/Financials_Transactions/blob/main/financial.py)
 
 - ###  "/consulta/<int:transaction_id>":
 - Este endpoint recebe um ID de transação como parâmetro na URL. 
